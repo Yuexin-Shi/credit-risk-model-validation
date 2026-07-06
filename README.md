@@ -22,7 +22,7 @@ The raw data is not included in this repository. It can be downloaded separately
 ## Planned Workflow
 
 - [x] Data quality audit
-- [ ] Exploratory data analysis
+- [x] Exploratory data analysis
 - [ ] Data preprocessing
 - [ ] Logistic regression baseline
 - [ ] Tree-based model comparison
