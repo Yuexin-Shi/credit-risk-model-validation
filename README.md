@@ -23,7 +23,7 @@ The raw data is not included in this repository. It can be downloaded separately
 
 - [x] Data quality audit
 - [x] Exploratory data analysis
-- [ ] Data preprocessing
+- [x] Data preprocessing
 - [ ] Logistic regression baseline
 - [ ] Tree-based model comparison
 - [ ] Model calibration
