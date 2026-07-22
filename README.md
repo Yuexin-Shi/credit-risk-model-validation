@@ -69,9 +69,11 @@ The models will be evaluated using:
 ```text
 credit-risk-model-validation/
 ├── data/
-│   ├── raw/
-│   │   └── .gitkeep
-│   └── README.md
+│   └── raw/
+│       └── cs-training.csv
+├── src/
+├── notebooks/
+├── README.md
 ├── notebooks/
 │   ├── 01_data_audit.ipynb
 │   ├── 02_exploratory_data_analysis.ipynb
