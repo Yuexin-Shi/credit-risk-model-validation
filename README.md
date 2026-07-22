@@ -19,6 +19,9 @@ The project uses the Give Me Some Credit dataset.
 
 The raw data is not included in this repository. It can be downloaded separately from Kaggle.
 
+The notebooks can be run in Google Colab by uploading `cs-training.csv` to `/content/cs-training.csv`.
+For local runs, place the dataset at `data/raw/cs-training.csv`.
+
 ## Project Workflow
 
 - [x] Data quality audit
