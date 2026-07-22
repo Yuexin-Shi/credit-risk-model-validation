@@ -88,7 +88,10 @@ credit-risk-model-validation/
 ├── reports/
 │   ├── figures/
 │   ├── model_card.md
+│   ├── shap_explainability.md
 │   └── README.md
+├── tests/
+│   └── test_data.py
 ├── LICENSE
 ├── README.md
 ├── requirements.txt
