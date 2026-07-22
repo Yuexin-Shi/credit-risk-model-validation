@@ -30,7 +30,7 @@ The raw data is not included in this repository. It can be downloaded separately
 - [x] SHAP explainability analysis
 - [x] Data drift analysis
 - [x] Model card
-- [x] API deployment
+- [x] API scaffold
 
 ## Key Results
 
