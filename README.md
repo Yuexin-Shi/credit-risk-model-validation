@@ -67,9 +67,27 @@ The models will be evaluated using:
 ```text
 credit-risk-model-validation/
 ├── data/
+│   ├── raw/
+│   │   └── .gitkeep
+│   └── README.md
 ├── notebooks/
+│   ├── 01_data_audit.ipynb
+│   ├── 02_exploratory_data_analysis.ipynb
+│   ├── 03_data_preprocessing.ipynb
+│   ├── 04_baseline_logistic_regression.ipynb
+│   ├── 05_tree_model_comparison.ipynb
+│   ├── 06_model_validation.ipynb
+│   └── 07_shap_explainability.ipynb
 ├── src/
+│   ├── api.py
+│   ├── data.py
+│   ├── features.py
+│   └── evaluation.py
 ├── reports/
+│   ├── figures/
+│   ├── model_card.md
+│   └── README.md
+├── LICENSE
 ├── README.md
 ├── requirements.txt
 └── .gitignore
