@@ -59,7 +59,6 @@ The models will be evaluated using:
 - Scikit-learn
 - Matplotlib
 - Seaborn
-- XGBoost
 - SHAP
 
 ## Repository Structure
