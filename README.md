@@ -37,11 +37,11 @@ For local runs, place the dataset at `data/raw/cs-training.csv`.
 
 ## Key Results
 
-- Built an end-to-end credit risk modeling pipeline using the Give Me Some Credit dataset.
-- Compared logistic regression and tree-based models for default prediction.
-- Evaluated model performance using ROC-AUC, PR-AUC, KS statistic, precision, recall, and calibration metrics.
-- Conducted threshold analysis to support risk-based approval, rejection, and manual review decisions.
-- Identified important borrower-level risk factors and potential model risk issues.
+- The best-performing model was Histogram Gradient Boosting, with test ROC-AUC of 0.868 and average precision of 0.405 after model validation.
+- The calibrated validation workflow achieved a test Brier score of 0.049, indicating reasonable probability calibration for default risk ranking.
+- At a 10% review-rate threshold, the selected probability cutoff was 0.176, supporting a risk-based manual review strategy.
+- Population Stability Index between training and test score distributions was 0.0006, suggesting low score distribution drift in the validation sample.
+- SHAP analysis identified historical delinquency, revolving credit utilization, and debt burden variables as important drivers of predicted default risk.
   
 ## Key Metrics
 
