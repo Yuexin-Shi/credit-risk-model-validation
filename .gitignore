@@ -226,3 +226,8 @@ data/raw/*
 
 # macOS
 .DS_Store
+
+# Raw data files
+data/raw/*.csv
+data/*.csv
+*.csv
