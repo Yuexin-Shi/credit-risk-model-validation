@@ -84,7 +84,7 @@ uvicorn src.api:app --reload
 
 ### Model Comparison
 
-![Model comparison metrics](reports/figures/model_comparison_metrics.png)
+![Model comparison metrics](reports/figures/model_comparision_metrics.png)
 
 ### Calibration
 
