@@ -78,13 +78,13 @@ uvicorn src.api:app --reload
 - The calibrated validation workflow achieved a test Brier score of 0.049, indicating reasonable probability calibration for default risk ranking.
 - At a 10% review-rate threshold, the selected probability cutoff was 0.176, supporting a risk-based manual review strategy.
 - Population Stability Index between training and test score distributions was 0.0006, suggesting low score distribution drift in the validation sample.
-- SHAP analysis identified historical delinquency, revolving credit utilization, and debt burden variables as important drivers of predic
+- SHAP analysis identified historical delinquency, revolving credit utilization, and debt burden variables as important drivers of predicted default risk.
 
 ## Selected Figures
 
 ### Model Comparison
 
-![Model comparison metrics](reports/figures/model_comparision_metrics.png)
+![Model comparison metrics](reports/figures/model_comparison_metrics.png)
 
 ### Calibration
 
@@ -93,7 +93,6 @@ uvicorn src.api:app --reload
 ### Risk Decile Analysis
 
 ![Risk decile plot](reports/figures/risk_decile_plot.png)
-
 
 ## Key Metrics
 
