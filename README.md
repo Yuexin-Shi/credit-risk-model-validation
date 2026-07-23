@@ -27,6 +27,37 @@ To reproduce the project:
 
 The notebooks can also be run in Google Colab by uploading `cs-training.csv` to `/content/cs-training.csv`.
 
+## Reproduce Locally
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Download the Kaggle Give Me Some Credit training file and place it here:
+
+```text
+data/raw/cs-training.csv
+```
+
+Train the final model and save local artifacts:
+
+```bash
+python -m src.train
+```
+
+This creates:
+
+- `models/credit_risk_model.pkl`
+- `models/model_metadata.json`
+
+Run the API after training:
+
+```bash
+uvicorn src.api:app --reload
+```
+
 ## Project Workflow
 
 - [x] Data quality audit
@@ -38,7 +69,8 @@ The notebooks can also be run in Google Colab by uploading `cs-training.csv` to 
 - [x] SHAP explainability analysis
 - [x] Data drift analysis
 - [x] Model card
-- [x] API scaffold
+- [x] Reproducible training script
+- [x] API scoring endpoint
 
 ## Key Results
 
@@ -50,7 +82,7 @@ The notebooks can also be run in Google Colab by uploading `cs-training.csv` to 
   
 ## Key Metrics
 
-The models will be evaluated using:
+The models are evaluated using:
 
 - ROC-AUC
 - PR-AUC
@@ -74,11 +106,9 @@ The models will be evaluated using:
 ```text
 credit-risk-model-validation/
 ├── data/
-│   └── raw/
-│       └── cs-training.csv
-├── src/
-├── notebooks/
-├── README.md
+│   ├── raw/
+│   │   └── .gitkeep
+│   └── README.md
 ├── notebooks/
 │   ├── 01_data_audit.ipynb
 │   ├── 02_exploratory_data_analysis.ipynb
@@ -92,9 +122,10 @@ credit-risk-model-validation/
 │   ├── api.py
 │   ├── data.py
 │   ├── features.py
-│   └── evaluation.py
-    └── train.py
-
+│   ├── evaluation.py
+│   └── train.py
+├── models/
+│   └── README.md
 ├── reports/
 │   ├── figures/
 │   │   └── README.md

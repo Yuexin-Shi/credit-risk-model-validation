@@ -218,6 +218,11 @@ __marimo__/
 .streamlit/secrets.toml
 
 # Raw data
+data/raw/*.csv
+
+# Generated model artifacts
+models/*.pkl
+models/*.json
 data/raw/*
 !data/raw/.gitkeep
 
